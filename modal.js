@@ -84,7 +84,7 @@ function validEmail() {
     emailText.classList.add("text-succes");
     email.classList.remove("border-danger");
     email.classList.add("border-succes");
-    emailText.innerHTML = "Champs valide";
+    emailText.innerHTML = "";
     return true;
   } else {
     emailText.innerHTML = "Veuillez saisir une adresse mail valide";
@@ -111,7 +111,7 @@ function validNaissance() {
   birthdateText.classList.add("text-succes");
   birthdate.classList.remove("border-danger");
   birthdate.classList.add("border-succes");
-  birthdateText.innerHTML = "Champs valide";
+  birthdateText.innerHTML = "";
   return true;
 }
 
@@ -130,7 +130,7 @@ function validTournoi() {
     quantity.classList.add("border-danger");
     return false;
   }
-  quantityText.innerHTML = "Champs valide";
+  quantityText.innerHTML = "";
   quantityText.classList.remove("text-danger");
   quantityText.classList.add("text-succes");
   quantity.classList.remove("border-danger");
@@ -143,7 +143,7 @@ function valideVille() {
   let locationText = document.getElementById("locationText");
   for (let i = 0; i < locations.length; i++) {
     if (locations[i].checked === true) {
-      locationText.innerHTML = "Champs valide";
+      locationText.innerHTML = "";
       locationText.classList.remove("text-danger");
       locationText.classList.add("text-succes");
       return true;
@@ -163,7 +163,7 @@ function validCondition() {
     conditionText.classList.add("text-danger");
     return false;
   }
-  conditionText.innerHTML = "Champs Valide";
+  conditionText.innerHTML = "";
   conditionText.classList.remove("text-danger");
   conditionText.classList.add("text-succes");
   return true;
